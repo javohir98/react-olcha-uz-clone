@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+body {
+    &.dark-mode {
+        background: #212529;
+        color: #ddd;
+    }
+}
+
 // common styles
 
 .btn-primary {
@@ -54,6 +61,17 @@
             cursor: pointer;
             transition: background 0.3s cubic-bezier(.58,.15,.64,1.27);
             overflow: hidden;
+            &.dark {
+                background: #111;
+
+                .shape {
+                    left: -7px;
+                    background: #111;
+                }
+                .sun {
+                    left: 30px;
+                }
+            }
             .section-header .navbar-top .dark-mode-button .shape {
                 position: absolute;
                 top: 4px;
@@ -74,6 +92,17 @@
                 border-radius: 10px;
                 background: #FD8400;
                 transition: left 0.3s cubic-bezier(.58,.15,.64,1.27);
+            }
+            .shape {
+                position: absolute;
+                top: 4px;
+                left: -45px;
+                height: 16px;
+                width: 46px;
+                background: #eee;
+                border-radius: 10px;
+                z-index: 1;
+                transition: 0.3s cubic-bezier(.58,.15,.64,1.27);
             }
         }
     }
@@ -135,3 +164,20 @@
     color: #fff;
     background-color: #eb1537;
 }
+
+.navbar-main .navbar-nav {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    .nav-link {
+        font-weight: 500;
+        padding-right: .7rem!important;
+        padding-left: .7rem!important;
+    }
+    .nav-item:hover {
+        background-color: #f0f0f0;
+        border-radius: .35rem;
+    }
+}
+
+// Section Banner

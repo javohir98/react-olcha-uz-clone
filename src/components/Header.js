@@ -1,9 +1,13 @@
-import React from 'react'
+import React,{ useState } from 'react'
 import { Link } from 'react-router-dom'
 
 function Header() {
+    const [activeSun, setActiveSun] = useState(false);
+    function a() {
+        setActiveSun(!activeSun)
+    }
     return (
-        <header className='section-header'>
+        <header className='section-header' id={activeSun?'true':'false'}>
             <div className="container">
                 <nav className="navbar navbar-top navbar-light border-bottom">
                     <div class="nav language">
@@ -22,7 +26,7 @@ function Header() {
                             <li><a href="#" class="nav-link js-compare-link text-danger"> Taqqoslash </a>
                             </li>
                         </ul>
-                        <div class="dark-mode-button">
+                        <div class={activeSun?'dark-mode-button dark':'dark-mode-button'} onClick={a}>
                             <div class="shape"></div>
                             <div class="sun"></div>
                         </div>
@@ -76,6 +80,19 @@ function Header() {
                         </div>
                     </div>
                 </section>
+
+                <nav className="navbar navbar-main justify-content-center navbar-light navbar-expand">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" style={{color:'#f50000'}} href="#">hyperX</a></li>
+                        <li class="nav-item"><a class="nav-link" style={{color:'#034ea2'}} href="#">Samsung</a></li>
+                        <li class="nav-item"><a class="nav-link" style={{color:'#ffa200'}} href="#">Xiaomi</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Remont va qurilish</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Sport anjomlari</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Chegirmalar</a></li>
+                        <li class="nav-item"><a class="nav-link" style={{color:'#ff0000'}} href="#">Parfyumeriya</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Oshxona buyumlari</a></li>
+                    </ul>
+                </nav>
             </div>
         </header>
     )
