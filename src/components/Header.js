@@ -5,6 +5,7 @@ function Header() {
     const [activeSun, setActiveSun] = useState(false);
     function a() {
         setActiveSun(!activeSun)
+        document.body.classList.toggle('dark-mode')
     }
     return (
         <header className='section-header' id={activeSun?'true':'false'}>

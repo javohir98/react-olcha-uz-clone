@@ -7,8 +7,27 @@
 body {
     &.dark-mode {
         background: #212529;
-        color: #ddd;
+        color: #ddd!important;
+        
+        .header-main {
+            background-color: #212529;
+        }
+        .border-bottom {
+            border-bottom-color: #111 !important;
+        }
     }
+}
+
+body.dark-mode .modal, body.dark-mode .navbar-light .nav-link, body.dark-mode .btn, body.dark-mode a, body.dark-mode .slider-main .item-slide .btn-outline-dark:hover, body.dark-mode [class*='card-product'] a.title, body.dark-mode .banner-promo:not(.bg-gradient-blue) a, body.dark-mode .price, body.dark-mode .dropdown-item, body.dark-mode .aside-megamenu .nav-link:not(.active), body.dark-mode .table, body.dark-mode .icontext .text, body.dark-mode .dropdown-menu {
+    color: #ddd;
+}
+
+body.dark-mode .slider-main .item-slide, body.dark-mode .card-banner .btn-outline-light:hover {
+    color: #111;
+}
+
+body.dark-mode .slider-main .item-slide .btn-outline-dark {
+    color: #212529;
 }
 
 // common styles
@@ -181,3 +200,65 @@ body {
 }
 
 // Section Banner
+
+.form-group:after, article:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.slider-main {
+    .item-slide {
+        background-color: #eb1537;
+        border-radius: .5rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        height: 380px;
+        overflow: hidden;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 60px;
+        .aside {
+            margin-right: 40px;
+        }
+        img {
+            border-radius: 5px;
+            mix-blend-mode: multiply;
+            max-width: 420px;
+        }
+    }
+
+}
+
+.card-banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    background-size: cover;
+    background-position: center center;
+    border-radius: .5rem;
+
+    .card-body {
+        background-size: cover;
+        position: relative;
+        z-index: 10;
+    }
+}
+
+.bg-gradient-pink {
+    background: #2a306c;
+    background: -webkit-gradient(linear,left top,right bottom,from(#7853b5),to(#2a306c));
+    background: linear-gradient(to bottom right,#7853b5,#2a306c);
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+
+@import 'responsive';
