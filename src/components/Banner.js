@@ -14,7 +14,7 @@ function Banner() {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-9 col-sm-7">
-                        <OwlCarousel className='slider-main owl-carousel owl-theme owl-loaded owl-drag' loop items='1' margin={10} autoplay dots={false}>
+                        <OwlCarousel className='slider-main owl-carousel owl-theme owl-loaded owl-drag' loop items='1' margin={10} autoplay dots={false} nav navText={['<i class="fas fa-chevron-left"></i>','<i class="fas fa-chevron-right"></i>']}>
                             <div className='item'>
                                 <article className="item-slide" style={{backgroundImage: 'linear-gradient(113.32deg, #FFF5C4 13.37%, #F5E79A 95.3%)'}}>
                                     <div className="aside">
