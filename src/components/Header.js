@@ -74,9 +74,9 @@ function Header() {
                                 <a rel="nofollow" href="#" class="btn"> 
                                     <i class="far fa-heart"></i> <span class="text">Tanlangan</span>
                                 </a>
-                                <a rel="nofollow" href="#" class="btn / cart-link"> 
+                                <Link rel="nofollow" to="/cart" class="btn / cart-link"> 
                                 <i class="fas fa-shopping-cart"></i> <span class="text">Savatcha</span> <b class="notify js-basket-num">0</b>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>

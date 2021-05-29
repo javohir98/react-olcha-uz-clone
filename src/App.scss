@@ -19,7 +19,7 @@ body {
 }
 
 body.dark-mode .modal, body.dark-mode .navbar-light .nav-link, body.dark-mode .btn, body.dark-mode a, body.dark-mode .slider-main .item-slide .btn-outline-dark:hover, body.dark-mode [class*='card-product'] a.title, body.dark-mode .banner-promo:not(.bg-gradient-blue) a, body.dark-mode .price, body.dark-mode .dropdown-item, body.dark-mode .aside-megamenu .nav-link:not(.active), body.dark-mode .table, body.dark-mode .icontext .text, body.dark-mode .dropdown-menu {
-    color: #ddd;
+    color: #ddd!important;
 }
 
 body.dark-mode .slider-main .item-slide, body.dark-mode .card-banner .btn-outline-light:hover {
@@ -32,6 +32,24 @@ body.dark-mode .slider-main .item-slide .btn-outline-dark {
 
 body.dark-mode .card-banner .btn-outline-light, body.dark-mode .nav-pills .nav-link.active, body.dark-mode .navbar-light .nav-link:hover, body.dark-mode .section-title {
     color: #fff;
+}
+
+body.dark-mode .box-category {
+    background: #111;
+    border-color: #111;
+}
+
+body.dark-mode .box-category .title, body.dark-mode .card .title, body.dark-mode .tracking-wrap .step.active.current .text {
+    color: #eee;
+}
+
+body.dark-mode .box.bg-light {
+    background: #111!important;
+    border-color: #111!important;
+}
+
+body.dark-mode .section-header .language .current, body.dark-mode .section-header .language .current:hover, body.dark-mode [class*='card-product'] a.title:hover, body.dark-mode .breadcrumb-item a:hover {
+    color: #EB1537;
 }
 
 // common styles
@@ -54,6 +72,34 @@ body.dark-mode .card-banner .btn-outline-light, body.dark-mode .nav-pills .nav-l
 
 .text-red {
     color: #eb1537;
+}
+
+.padding-y {
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+a {
+    color: #212529;
+    text-decoration: none!important;
+}
+
+.text-lg {
+    font-size: 125%;
+}
+
+.row-sm {
+    margin-right: -7px;
+    margin-left: -7px;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 //  header section
@@ -366,6 +412,9 @@ body.dark-mode .card-banner .btn-outline-light, body.dark-mode .nav-pills .nav-l
         color: #9FAAB7;
         text-decoration: none;
     }
+    .name-category:hover {
+        color: #eb1537;
+    }
     .title {
         overflow: hidden;
         height: 75px;
@@ -399,6 +448,9 @@ body.dark-mode .card-banner .btn-outline-light, body.dark-mode .nav-pills .nav-l
         color: #212529;
         display: block;
     }
+    a.title:hover {
+        color: #eb1537;
+    }
 }
 
 .img-wrap {
@@ -406,7 +458,105 @@ body.dark-mode .card-banner .btn-outline-light, body.dark-mode .nav-pills .nav-l
     display: block;
 }
 
+// Category slider
 
+.box-category {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex!important;
+    margin: 3px;
+    padding: 15px 15px 15px 10px;
+    border-radius: .5rem;
+    background-color: #fff;
+    border: 1px solid #e4e4e4;
+    &:hover {
+        border-color: #eb1537;
+        -webkit-box-shadow: 0 0 10px rgba(235, 21, 55, .2);
+        box-shadow: 0 0 10px rgba(235, 21, 55, .2);
+    }
+
+    .icon {
+        width: 60px!important;
+        height: 50px;
+        -o-object-fit: contain;
+        object-fit: contain;
+    }
+    .text {
+        max-width: 70%;
+    }
+    .title {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+
+.icontext {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    vertical-align: middle;
+    text-decoration: none;
+
+    .icon {
+        position: relative;
+        margin-right: 10px;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+        flex-grow: 0;
+    }
+    .text {
+        width: 100%;
+        color: #212529;
+    }
+    .title {
+        display: block;
+        margin-bottom: 3px;
+    }
+}
+
+// Section Footer
+
+.section-footer {
+
+    .menu-footer {
+        margin-top: 20px;
+
+        li {
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        a {
+            color: inherit;
+            text-decoration: none!important;
+        }
+        a:hover {
+            color: #eb1537;
+        }
+    }
+}
+
+.box {
+    padding: 16px;
+    background: #ebebea;
+    border-radius: .35rem;
+    border: 1px solid #e4e4e4;
+}
+
+[class*=list-] li:after {
+    visibility: hidden;
+    display: block;
+    content: "";
+    overflow: hidden;
+    height: 0;
+    clear: both;
+}
 
 
 @import 'responsive';

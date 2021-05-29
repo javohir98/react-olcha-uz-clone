@@ -1,6 +1,8 @@
 import React from 'react'
 import Banner from '../Banner'
+import CategorySlider from '../CategorySlider'
 import ProductSlider from '../ProductSlider'
+import SectionDeal from '../SectionDeal'
 
 function Home() {
     return (
@@ -14,6 +16,12 @@ function Home() {
             <ProductSlider 
                 section_title='Yangi mahsulotlar'
                 type='new'
+            />
+            <CategorySlider />
+            <SectionDeal />
+            <ProductSlider 
+                section_title="Chegirmali muddatli to'lov"
+                type='discount'
             />
         </>
     )

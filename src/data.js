@@ -1,4 +1,4 @@
-export  const productData = [
+export const productData = [
     {
         img: './productImg/p1.jpeg',
         nameCategory: 'Smartfonlar',
@@ -200,6 +200,186 @@ export  const productData = [
         price: 899000
     },
     {
+        img: './productImg/d1.png',
+        nameCategory: '',
+        title: 'Samsung Galaxy Buds Live Bronze ',
+        type: 'deal',
+        rating: 0,
+        monthly: 139000,
+        discountPrice: 1500000,
+        price: 1168000
+    },
+    {
+        img: './productImg/d2.jpeg',
+        nameCategory: '',
+        title: 'Panasonic SD-ZB2512KTS ',
+        type: 'deal',
+        rating: 0,
+        monthly: 229000,
+        discountPrice: 2755000,
+        price: 1929000
+    },
+    {
+        img: './productImg/d3.jpeg',
+        nameCategory: '',
+        title: 'Veb-kamera Defender C-2525 ',
+        type: 'deal',
+        rating: 0,
+        monthly: 0,
+        discountPrice: 219000,
+        price: 153000
+    },
+    {
+        img: './productImg/d4.jpeg',
+        nameCategory: '',
+        title: 'Choyshablar Kinli WYP (1.5), Pink ',
+        type: 'deal',
+        rating: 0,
+        monthly: 28000,
+        discountPrice: 329000,
+        price: 234000
+    },
+    {
+        img: './productImg/d5.jpeg',
+        nameCategory: '',
+        title: 'Protsessor uchun kuler Zalman CNPS17X ',
+        type: 'deal',
+        rating: 0,
+        monthly: 88000,
+        discountPrice: 789000,
+        price: 743000
+    },
+    {
+        img: './productImg/d6.jpeg',
+        nameCategory: '',
+        title: 'Klaviatura va sichqoncha Logitech MK330 (RU) ',
+        type: 'deal',
+        rating: 0,
+        monthly: 36000,
+        discountPrice: 427000,
+        price: 299000
+    },
+    {
+        img: './productImg/d7.png',
+        nameCategory: '',
+        title: 'Crucial  DDR4 16GB KIT (8GBx2) 2666mhz ',
+        type: 'deal',
+        rating: 0,
+        monthly: 93000,
+        discountPrice: 787000,
+        price: 780000
+    },
+    {
+        img: './productImg/d8.jpg',
+        nameCategory: '',
+        title: 'Go‘sht qiymalagich Panasonic MK-MG1000WTQ ',
+        type: 'deal',
+        rating: 0,
+        monthly: 101000,
+        discountPrice: 1012000,
+        price: 850000
+    },
+    {
+        img: './productImg/dc1.jpeg',
+        nameCategory: 'Non uchun pechlar',
+        title: 'Panasonic SD-ZB2512KTS',
+        type: 'discount',
+        rating: 0,
+        monthly: 229000,
+        discountPrice: 2755000,
+        price: 1929000
+    },
+    {
+        img: './productImg/dc2.jpeg',
+        nameCategory: 'Sichqonchalar',
+        title: 'Sichqoncha Sven GX-950 Gaming',
+        type: 'discount',
+        rating: 0,
+        monthly: 11000,
+        discountPrice: 0,
+        price: 106000
+    },
+    {
+        img: './productImg/dc3.jpeg',
+        nameCategory: 'Veb-kamera',
+        title: 'Veb-kamera Defender C-2525 ',
+        type: 'discount',
+        rating: 0,
+        monthly: 0,
+        discountPrice: 219000,
+        price: 153000
+    },
+    {
+        img: './productImg/dc4.jpeg',
+        nameCategory: 'Noutbuk uchun sumka va ryukzaklar',
+        title: 'Ryukzak noutbuk uchun Rivacase Suzuka 7760 15.6" , Black',
+        type: 'discount',
+        rating: 0,
+        monthly: 41000,
+        discountPrice: 0,
+        price: 340000
+    },
+    {
+        img: './productImg/dc5.jpeg',
+        nameCategory: 'Yotoq anjomlari',
+        title: 'Choyshablar Kinli WYP (1.5), Pink',
+        type: 'discount',
+        rating: 0,
+        monthly: 28000,
+        discountPrice: 329000,
+        price: 234000
+    },
+    {
+        img: './productImg/dc6.jpeg',
+        nameCategory: 'Klaviatura va Sichqoncha',
+        title: 'HP Spectre Rechargeable Mouse 700 (Luxe Cooper) (3NZ70AA)',
+        type: 'discount',
+        rating: 0,
+        monthly: 75000,
+        discountPrice: 0,
+        price: 630000
+    },
+    {
+        img: './productImg/dc7.jpeg',
+        nameCategory: 'Kompyuter sovutish tizimlari',
+        title: 'Protsessor uchun kuler Zalman CNPS5X Performa',
+        type: 'discount',
+        rating: 0,
+        monthly: 22000,
+        discountPrice: 0,
+        price: 230000
+    },
+    {
+        img: './productImg/dc8.jpeg',
+        nameCategory: 'Kompyuter sovutish tizimlari',
+        title: ' Protsessor uchun kuler Zalman CNPS17X',
+        type: 'discount',
+        rating: 0,
+        monthly: 88000,
+        discountPrice: 789000,
+        price: 743000
+    },
+    {
+        img: './productImg/dc9.jpeg',
+        nameCategory: 'Kompyuter korpuslari',
+        title: 'Korpus Zalman T7 (ATX)',
+        type: 'discount',
+        rating: 0,
+        monthly: 50000,
+        discountPrice: 0,
+        price: 414000
+    },
+    {
+        img: './productImg/dc10.jpeg',
+        nameCategory: 'SSD to‘plagichlar',
+        title: 'Unibit SSD 256GB',
+        type: 'discount',
+        rating: 0,
+        monthly: 43000,
+        discountPrice: 0,
+        price: 361000
+    },
+    {
         img: '',
         nameCategory: '',
         title: '',
@@ -209,4 +389,47 @@ export  const productData = [
         discountPrice: 0,
         price: 0
     },
+]
+
+export const categoryData = [
+    {
+        img: './categoryImg/c1.png',
+        title: 'Maishiy texnika'
+    },
+    {
+        img: './categoryImg/c2.png',
+        title: 'Avto jihozlar'
+    },
+    {
+        img: './categoryImg/c3.png',
+        title: 'Noutbuk, printer, kompyuterlar'
+    },
+    {
+        img: './categoryImg/c4.png',
+        title: 'Barchasi ofis, uy va bog‘ uchun'
+    },
+    {
+        img: './categoryImg/c5.png',
+        title: 'Kitoblar'
+    },
+    {
+        img: './categoryImg/c6.png',
+        title: 'Oshxona texnikasi'
+    },
+    {
+        img: './categoryImg/c7.png',
+        title: 'Televizor, foto-video va audio'
+    },
+    {
+        img: './categoryImg/c8.png',
+        title: 'Kantselyariya tovarlari'
+    },
+    {
+        img: './categoryImg/c9.png',
+        title: 'Sport anjomlari'
+    },
+    {
+        img: './categoryImg/c10.png',
+        title: 'Go‘zallik va salomatlik'
+    }
 ]
