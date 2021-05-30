@@ -23,11 +23,11 @@ body.dark-mode .modal, body.dark-mode .navbar-light .nav-link, body.dark-mode .b
 }
 
 body.dark-mode .slider-main .item-slide, body.dark-mode .card-banner .btn-outline-light:hover {
-    color: #111;
+    color: #111!important;
 }
 
 body.dark-mode .slider-main .item-slide .btn-outline-dark {
-    color: #212529;
+    color: #212529!important;
 }
 
 body.dark-mode .card-banner .btn-outline-light, body.dark-mode .nav-pills .nav-link.active, body.dark-mode .navbar-light .nav-link:hover, body.dark-mode .section-title {
@@ -49,7 +49,12 @@ body.dark-mode .box.bg-light {
 }
 
 body.dark-mode .section-header .language .current, body.dark-mode .section-header .language .current:hover, body.dark-mode [class*='card-product'] a.title:hover, body.dark-mode .breadcrumb-item a:hover {
-    color: #EB1537;
+    color: #EB1537!important;
+}
+
+
+body.dark-mode .section-header .widgets-wrap .btn:hover, body.dark-mode .bg, body.dark-mode .nav-pills .nav-link.active, body.dark-mode .navbar-nav .nav-item:hover, body.dark-mode .banner-promo:not(.bg-gradient-blue), body.dark-mode .dropdown-menu, body.dark-mode .switch-toggle-radio, body.dark-mode .block-subscribe.bg-light, body.dark-mode .list-menu li.active a, body.dark-mode .accordion>.card .card-header, body.dark-mode .breadcrumb, body.dark-mode .nav-profile a.active, body.dark-mode .nav-profile a:hover, body.dark-mode .nav-orders, body.dark-mode .single-new-content .center-info-box, body.dark-mode .single-new-content .specs-table td:first-child, body.dark-mode .bg-light, body.dark-mode .card.bg {
+    background: #111!important;
 }
 
 // common styles
@@ -64,6 +69,10 @@ body.dark-mode .section-header .language .current, body.dark-mode .section-heade
 
 .btn i + .text {
     margin-left: 10px;
+}
+
+.padding-top-sm {
+    padding-top: 16px;
 }
 
 .padding-bottom {
@@ -413,7 +422,7 @@ a {
         text-decoration: none;
     }
     .name-category:hover {
-        color: #eb1537;
+        color: #eb1537!important;
     }
     .title {
         overflow: hidden;
@@ -557,6 +566,141 @@ a {
     height: 0;
     clear: both;
 }
+
+
+// Why section
+
+.list-why li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: .5rem;
+}
+
+.list-why li:hover {
+    background-color: rgba(34,34,34,.2);
+}
+
+.list-why .icon {
+    margin-right: 10px;
+    width: 30px;
+    text-align: center;
+}
+
+// News section  
+
+.box-news {
+    display: block;
+    position: relative;
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    z-index: 1;
+    padding: 24px;
+    color: #fff;
+}
+
+.box-news:hover {
+    color: #fff;
+}
+
+.box-news img.back {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    width: 70%!important;
+    height: 100%;
+    z-index: -2;
+    object-fit: cover;
+    object-position: center;
+}
+
+.owl-item:nth-child(3n+0) .box-news .gradient, .item-slide:nth-child(3n+0) .box-news .gradient, .col-12:nth-child(3n+0) .box-news .gradient {
+    background: linear-gradient(
+270.19deg
+,rgba(255,255,255,0) 30%,#6D3687 50%);
+}
+
+.owl-item:nth-child(3n-1) .box-news .gradient, .item-slide:nth-child(3n-1) .box-news .gradient, .col-12:nth-child(3n-1) .box-news .gradient {
+    background: linear-gradient(
+270.19deg
+,rgba(255,255,255,0) 30%,#EB1537 50%);
+}
+
+.box-news:hover .gradient {
+    left: 0;
+}
+
+.box-news .gradient {
+    position: absolute;
+    top: 0;
+    left: -25%;
+    width: 125%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(
+270.19deg
+,rgba(255,255,255,0) 30%,#0EA4D3 50%);
+    transition: .3s;
+}
+
+.box-news:hover .top-text, .box-news:hover .bottom-text {
+    opacity: 1;
+}
+
+.box-news .top-text, .box-news .bottom-text {
+    opacity: .7;
+    transition: .3s;
+}
+
+.box-news .title {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    font-size: 21px;
+    max-width: 260px;
+}
+
+// history view
+
+.scroll-horizontal {
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.item-watched {
+    width: 112px;
+    height: 112px;
+    display: inline-block;
+    margin-right: 15px;
+    text-align: center;
+    border: 1px solid #e4e4e4;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.item-watched:hover {
+    border-color: #eb1537;
+    -webkit-box-shadow: 0 0 10px rgba(235, 21, 55, 0.2);
+    box-shadow: 0 0 10px rgba(235, 21, 55, 0.2);
+}
+
+.item-watched img {
+    max-width: 100%;
+    max-height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+.home-info a {
+    color: #212529;
+    text-decoration: none;
+    background-color: transparent;
+    &:hover {
+        text-decoration: none;
+        color: #000
+    }
+}
+
 
 
 @import 'responsive';

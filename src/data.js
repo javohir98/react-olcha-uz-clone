@@ -380,6 +380,66 @@ export const productData = [
         price: 361000
     },
     {
+        img: './productImg/why1.jpeg',
+        nameCategory: 'Veb-kamera',
+        title: 'Veb-kamera Defender C-2525',
+        type: 'why',
+        rating: 0,
+        monthly: 0,
+        discountPrice: 219000,
+        price: 153000
+    },
+    {
+        img: './productImg/why2.jpeg',
+        nameCategory: 'Sovg‘alar vaucheri',
+        title: 'Sovg‘a uchun vaucherlar',
+        type: 'why',
+        rating: 0,
+        monthly: 0,
+        discountPrice: 0,
+        price: 200000
+    },
+    {
+        img: './productImg/why3.jpg',
+        nameCategory: 'Changyutgich va aksessuarlar',
+        title: 'Changyutgich Samsung VC18M31B0HN',
+        type: 'why',
+        rating: 0,
+        monthly: 172000,
+        discountPrice: 0,
+        price: 1444000
+    },
+    {
+        img: './productImg/why4.jpeg',
+        nameCategory: 'Smart Watches',
+        title: 'Xiaomi Mi Band 5, Black XMSH10HM (Global version)',
+        type: 'why',
+        rating: 0,
+        monthly: 41000,
+        discountPrice: 399000,
+        price: 340000
+    },
+    {
+        img: './productImg/why5.jpeg',
+        nameCategory: 'Kir yuvish mashinalari',
+        title: 'Kir yuvish mashinasi Artel ART 60C101, Gold (6kg)',
+        type: 'why',
+        rating: 0,
+        monthly: 380000,
+        discountPrice: 0,
+        price: 3207000
+    },
+    {
+        img: './productImg/why6.jpeg',
+        nameCategory: 'Blenderlar',
+        title: 'Blender Panasonic MX-SS1BTQ',
+        type: 'why',
+        rating: 0,
+        monthly: 72000,
+        discountPrice: 0,
+        price: 605000
+    },
+    {
         img: '',
         nameCategory: '',
         title: '',
@@ -432,4 +492,57 @@ export const categoryData = [
         img: './categoryImg/c10.png',
         title: 'Go‘zallik va salomatlik'
     }
+]
+
+export const newsData = [
+    {
+        img: './newsImg/n1.jpg',
+        title: 'Samsung Galaxy Z Flip 3: Smartfon haqida yuqori sifatli tartib va ​​tafsilotlar',
+        date: '06-05-2021',
+    },
+    {
+        img: './newsImg/n2.jpg',
+        title: 'Samsung Galaxy Tab A7 Lite: planshetda yangi ma`lumotlar',
+        date: '06-05-2021',
+    },
+    {
+        img: './newsImg/n3.jpg',
+        title: 'iPhone 13 Samsung-dan 120 Gts chastotali displeylarni oladi',
+        date: '05-05-2021',
+    },
+    {
+        img: './newsImg/n4.jpg',
+        title: 'Samsung Galaxy S21 FE rasmiy veb-saytida paydo bo`ldi',
+        date: '01-05-2021',
+    },
+    {
+        img: './newsImg/n5.png',
+        title: 'Samsung Galaxy Book Pro va Pro 360 noutbuklarini taqdim etdi',
+        date: '30-04-2021',
+    },
+    {
+        img: './newsImg/n6.jpg',
+        title: 'Samsungdan Exynos 2200 chipsisi smartfon va noutbuklarda o`rnatiladi',
+        date: '13-05-2021',
+    },
+    {
+        img: './newsImg/n7.jpg',
+        title: 'Fotosurat: bizga binafsha rangli iPhone 12 va iPhone 12 mini keldi',
+        date: '12-05-2021',
+    },
+    {
+        img: './newsImg/n8.jpg',
+        title: 'Samsung Galaxy A82 5G Smartfon reklama videoni tez orada paydo bo`ldi',
+        date: '12-05-2021',
+    },
+    {
+        img: './newsImg/n9.jpg',
+        title: 'Ishlab chiqaruvchi Galaxy A72 uchun katta yangilanishni chiqardi',
+        date: '12-05-2021',
+    },
+    {
+        img: './newsImg/n10.jpg',
+        title: 'Ko`chalarni tozalash uchun ulkan Trombiya robot changyutgichi',
+        date: '12-05-2021',
+    },
 ]
