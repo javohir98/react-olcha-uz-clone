@@ -21,7 +21,7 @@ function CategorySlider() {
                     navText={['<i class="fas fa-chevron-left"></i>','<i class="fas fa-chevron-right"></i>']}
                 >
                     {categoryData.map(item => (
-                        <div className="item">
+                        <div className="item" key={item.id}>
                             <div className="item-slide">
                                 <a href="#" className="box-category icontext ">
                                     <img className="icon" alt="Maishiy texnika" src={item.img}/>

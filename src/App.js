@@ -7,16 +7,19 @@ import Home from './components/pages/Home'
 import Cart from './components/pages/Cart'
 import { Route, Switch } from 'react-router';
 import Footer from './components/Footer';
+import ProductView from './components/pages/ProductView'
 
 function App() {
   return (
     < >
-      <span class="body-overlay"></span>
       <Header />
       {/* <Home /> */}
       <Switch>
         <Route exact path='/' component={Home} />
         <Route path='/cart' component={Cart} />
+        <Route path='/product/:id'>
+          <ProductView />
+        </Route>
       </Switch>
       <Footer />
     </>

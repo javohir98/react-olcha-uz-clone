@@ -21,7 +21,7 @@ function NewsSlider() {
                 >
                     {newsData.map(item => {
                         return (
-                            <div className="item">
+                            <div className="item" key={item.id}>
                                 <a href="https://olcha.uz/oz/blog/view/samsung-galaxy-z-flip-3-kachestvennye-rendery-i-podrobnosti-o-smartfone" className="box-news">
                                     <img className="back" src={item.img}/>
                                     <div className="gradient"></div>

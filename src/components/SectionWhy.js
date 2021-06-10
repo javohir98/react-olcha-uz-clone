@@ -27,7 +27,7 @@ function SectionWhy() {
                             {productData.map(item => {
                                 if(item.type == 'why') {
                                     return (
-                                        <div className="item">
+                                        <div className="item" key={item.id}>
                                             <article className='card-product-grid'>
                                                 <a href='#' className='img-wrap'>
                                                     <img className=" ls-is-cached lazyloaded" data-src={item.img} alt={item.title} src={item.img}/>

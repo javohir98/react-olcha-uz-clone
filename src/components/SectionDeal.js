@@ -29,7 +29,7 @@ function SectionDeal() {
                             {productData.map(item => {
                                 if(item.type == 'deal') {
                                     return (
-                                        <div className="col-lg-3 col-md-3 col-6">
+                                        <div className="col-lg-3 col-md-3 col-6" key={item.id}>
                                             <article className='card-product-grid mb-0'>
                                                 <a href="#" className="img-wrap">
                                                     <img className=" ls-is-cached lazyloaded" data-src={item.img} alt={item.title} src={item.img}/>

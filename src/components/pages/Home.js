@@ -15,16 +15,19 @@ function Home() {
                 section_title='Ko‘p tanlangan mahsulotlar'
                 type='trend'
                 autoplay
+                imgUrl=''
             />
             <ProductSlider 
                 section_title='Yangi mahsulotlar'
                 type='new'
+                imgUrl=''
             />
             <CategorySlider />
             <SectionDeal />
             <ProductSlider 
                 section_title="Chegirmali muddatli to'lov"
                 type='discount'
+                imgUrl=''
             />
             <SectionWhy />
             <NewsSlider />

@@ -1,5 +1,6 @@
 export const productData = [
     {
+        id: 1,
         img: './productImg/p1.jpeg',
         nameCategory: 'Smartfonlar',
         title: 'Vivo X60 Pro 5G 12/256GB, Shimmer Blue',
@@ -10,6 +11,7 @@ export const productData = [
         price: 8708000
     },
     {
+        id: 2,
         img: './productImg/p2.jpeg',
         nameCategory: 'Jahon adabiyoti',
         title: 'Million dollarlik xatolar',
@@ -20,6 +22,7 @@ export const productData = [
         price: 70000
     },
     {
+        id: 3,
         img: './productImg/p3.jpeg',
         nameCategory: 'Media Player',
         title: 'Xiaomi Mi TV Stick',
@@ -30,6 +33,7 @@ export const productData = [
         price: 425000
     },
     {
+        id: 4,
         img: './productImg/p4.jpeg',
         nameCategory: 'Smartfonlar',
         title: 'Xiaomi Redmi 9 3/32GB, Ocean Green (Global)',
@@ -40,6 +44,7 @@ export const productData = [
         price: 1540000
     },
     {
+        id: 5,
         img: './productImg/p5.jpeg',
         nameCategory: 'Smartfonlar',
         title: 'Samsung Galaxy A31 4/64GB, Prism Crush Blue A315',
@@ -50,6 +55,7 @@ export const productData = [
         price: 2602000
     },
     {
+        id: 6,
         img: './productImg/p6.jpeg',
         nameCategory: 'Garnituralar',
         title: 'Olcha.uz dan sovg‘a Quloqchin',
@@ -60,6 +66,7 @@ export const productData = [
         price: 50000
     },
     {
+        id: 7,
         img: './productImg/p7.jpeg',
         nameCategory: 'Smart Watches',
         title: 'Xiaomi Mi Band 5, Black XMSH10HM (Global version)',
@@ -70,6 +77,7 @@ export const productData = [
         price: 340000
     },
     {
+        id: 8,
         img: './productImg/p8.jpeg',
         nameCategory: 'Smartfonlar',
         title: 'Samsung Galaxy A21s 3/32GB, Black A217',
@@ -80,6 +88,7 @@ export const productData = [
         price: 2071000
     },
     {
+        id: 9,
         img: './productImg/p9.jpeg',
         nameCategory: 'Garnitural',
         title: 'Xiaomi Mi True Wireless Earbuds Basic 2S',
@@ -90,6 +99,7 @@ export const productData = [
         price: 319000
     },
     {
+        id: 10,
         img: './productImg/p10.jpeg',
         nameCategory: 'Smart Watches',
         title: 'Xiaomi Mi Band 6',
@@ -100,6 +110,7 @@ export const productData = [
         price: 549000
     },
     {
+        id: 11,
         img: './productImg/p11.jpeg',
         nameCategory: 'Videoregistratorlar va Radar-detektorlar',
         title: 'Videoregistrator Evotech E70',
@@ -110,6 +121,7 @@ export const productData = [
         price: 881000
     },
     {
+        id: 12,
         img: './productImg/p12.jpeg',
         nameCategory: 'Avtosignalizatsiya',
         title: 'Magicar dominant SMART',
@@ -120,6 +132,7 @@ export const productData = [
         price: 531000
     },
     {
+        id: 13,
         img: './productImg/p13.jpeg',
         nameCategory: 'Ventilyatorlar',
         title: 'Ventilyator Tornado (taymerli)',
@@ -130,6 +143,7 @@ export const productData = [
         price: 249000
     },
     {
+        id: 14,
         img: './productImg/p14.jpeg',
         nameCategory: 'Avtoaksessuarlar',
         title: 'Mersedes Deflektor 4ta',
@@ -140,6 +154,7 @@ export const productData = [
         price: 478000
     },
     {
+        id: 15,
         img: './productImg/p15.jpeg',
         nameCategory: 'Ventilyatorlar',
         title: 'Ventilyator Tornodo',
@@ -150,6 +165,7 @@ export const productData = [
         price: 199000
     },
     {
+        id: 16,
         img: './productImg/p16.jpeg',
         nameCategory: 'Klaviaturalar',
         title: 'Razer BlackWidow V3 Pro Wireless/USB (RZ03-03530800-R3R1)',
@@ -160,6 +176,7 @@ export const productData = [
         price: 2539000
     },
     {
+        id: 17,
         img: './productImg/p17.jpeg',
         nameCategory: 'Kompyuter korpuslari',
         title: 'Zalman N4 FRGB + 3x140mm/3x120mm',
@@ -170,6 +187,7 @@ export const productData = [
         price: 585000
     },
     {
+        id: 18,
         img: './productImg/p18.jpeg',
         nameCategory: 'Quvvatlanish bloki',
         title: 'Zalman GigaMax 650W 80+Bronze (ZM650-GVII)',
@@ -180,6 +198,7 @@ export const productData = [
         price: 625000
     },
     {
+        id: 19,
         img: './productImg/p19.jpeg',
         nameCategory: 'Quvvatlanish bloki',
         title: 'Zalman GigaMax 550W 80+Bronze (ZM550-GVII)',
@@ -190,6 +209,7 @@ export const productData = [
         price: 572000
     },
     {
+        id: 20,
         img: './productImg/p20.png',
         nameCategory: 'Smartfonlar',
         title: 'ZTE Blade A3 2020 1/32G, Dark Grey',
@@ -200,6 +220,7 @@ export const productData = [
         price: 899000
     },
     {
+        id: 21,
         img: './productImg/d1.png',
         nameCategory: '',
         title: 'Samsung Galaxy Buds Live Bronze ',
@@ -210,6 +231,7 @@ export const productData = [
         price: 1168000
     },
     {
+        id: 22,
         img: './productImg/d2.jpeg',
         nameCategory: '',
         title: 'Panasonic SD-ZB2512KTS ',
@@ -220,6 +242,7 @@ export const productData = [
         price: 1929000
     },
     {
+        id: 23,
         img: './productImg/d3.jpeg',
         nameCategory: '',
         title: 'Veb-kamera Defender C-2525 ',
@@ -230,6 +253,7 @@ export const productData = [
         price: 153000
     },
     {
+        id: 24,
         img: './productImg/d4.jpeg',
         nameCategory: '',
         title: 'Choyshablar Kinli WYP (1.5), Pink ',
@@ -240,6 +264,7 @@ export const productData = [
         price: 234000
     },
     {
+        id: 25,
         img: './productImg/d5.jpeg',
         nameCategory: '',
         title: 'Protsessor uchun kuler Zalman CNPS17X ',
@@ -250,6 +275,7 @@ export const productData = [
         price: 743000
     },
     {
+        id: 26,
         img: './productImg/d6.jpeg',
         nameCategory: '',
         title: 'Klaviatura va sichqoncha Logitech MK330 (RU) ',
@@ -260,6 +286,7 @@ export const productData = [
         price: 299000
     },
     {
+        id: 27,
         img: './productImg/d7.png',
         nameCategory: '',
         title: 'Crucial  DDR4 16GB KIT (8GBx2) 2666mhz ',
@@ -270,6 +297,7 @@ export const productData = [
         price: 780000
     },
     {
+        id: 28,
         img: './productImg/d8.jpg',
         nameCategory: '',
         title: 'Go‘sht qiymalagich Panasonic MK-MG1000WTQ ',
@@ -280,6 +308,7 @@ export const productData = [
         price: 850000
     },
     {
+        id: 29,
         img: './productImg/dc1.jpeg',
         nameCategory: 'Non uchun pechlar',
         title: 'Panasonic SD-ZB2512KTS',
@@ -290,6 +319,7 @@ export const productData = [
         price: 1929000
     },
     {
+        id: 30,
         img: './productImg/dc2.jpeg',
         nameCategory: 'Sichqonchalar',
         title: 'Sichqoncha Sven GX-950 Gaming',
@@ -300,6 +330,7 @@ export const productData = [
         price: 106000
     },
     {
+        id: 31,
         img: './productImg/dc3.jpeg',
         nameCategory: 'Veb-kamera',
         title: 'Veb-kamera Defender C-2525 ',
@@ -310,6 +341,7 @@ export const productData = [
         price: 153000
     },
     {
+        id: 32,
         img: './productImg/dc4.jpeg',
         nameCategory: 'Noutbuk uchun sumka va ryukzaklar',
         title: 'Ryukzak noutbuk uchun Rivacase Suzuka 7760 15.6" , Black',
@@ -320,6 +352,7 @@ export const productData = [
         price: 340000
     },
     {
+        id: 33,
         img: './productImg/dc5.jpeg',
         nameCategory: 'Yotoq anjomlari',
         title: 'Choyshablar Kinli WYP (1.5), Pink',
@@ -330,6 +363,7 @@ export const productData = [
         price: 234000
     },
     {
+        id: 34,
         img: './productImg/dc6.jpeg',
         nameCategory: 'Klaviatura va Sichqoncha',
         title: 'HP Spectre Rechargeable Mouse 700 (Luxe Cooper) (3NZ70AA)',
@@ -340,6 +374,7 @@ export const productData = [
         price: 630000
     },
     {
+        id: 35,
         img: './productImg/dc7.jpeg',
         nameCategory: 'Kompyuter sovutish tizimlari',
         title: 'Protsessor uchun kuler Zalman CNPS5X Performa',
@@ -350,6 +385,7 @@ export const productData = [
         price: 230000
     },
     {
+        id: 36,
         img: './productImg/dc8.jpeg',
         nameCategory: 'Kompyuter sovutish tizimlari',
         title: ' Protsessor uchun kuler Zalman CNPS17X',
@@ -360,6 +396,7 @@ export const productData = [
         price: 743000
     },
     {
+        id: 37,
         img: './productImg/dc9.jpeg',
         nameCategory: 'Kompyuter korpuslari',
         title: 'Korpus Zalman T7 (ATX)',
@@ -370,6 +407,7 @@ export const productData = [
         price: 414000
     },
     {
+        id: 38,
         img: './productImg/dc10.jpeg',
         nameCategory: 'SSD to‘plagichlar',
         title: 'Unibit SSD 256GB',
@@ -380,6 +418,7 @@ export const productData = [
         price: 361000
     },
     {
+        id: 39,
         img: './productImg/why1.jpeg',
         nameCategory: 'Veb-kamera',
         title: 'Veb-kamera Defender C-2525',
@@ -390,6 +429,7 @@ export const productData = [
         price: 153000
     },
     {
+        id: 40,
         img: './productImg/why2.jpeg',
         nameCategory: 'Sovg‘alar vaucheri',
         title: 'Sovg‘a uchun vaucherlar',
@@ -400,6 +440,7 @@ export const productData = [
         price: 200000
     },
     {
+        id: 41,
         img: './productImg/why3.jpg',
         nameCategory: 'Changyutgich va aksessuarlar',
         title: 'Changyutgich Samsung VC18M31B0HN',
@@ -410,6 +451,7 @@ export const productData = [
         price: 1444000
     },
     {
+        id: 42,
         img: './productImg/why4.jpeg',
         nameCategory: 'Smart Watches',
         title: 'Xiaomi Mi Band 5, Black XMSH10HM (Global version)',
@@ -420,6 +462,7 @@ export const productData = [
         price: 340000
     },
     {
+        id: 43,
         img: './productImg/why5.jpeg',
         nameCategory: 'Kir yuvish mashinalari',
         title: 'Kir yuvish mashinasi Artel ART 60C101, Gold (6kg)',
@@ -430,6 +473,7 @@ export const productData = [
         price: 3207000
     },
     {
+        id: 44,
         img: './productImg/why6.jpeg',
         nameCategory: 'Blenderlar',
         title: 'Blender Panasonic MX-SS1BTQ',
