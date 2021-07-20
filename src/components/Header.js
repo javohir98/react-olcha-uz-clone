@@ -1,9 +1,11 @@
 import React,{ useState } from 'react'
 import { Link } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 
 function Header() {
     const [activeSun, setActiveSun] = useState(false);
     const [isActive, setIsActive] = useState(false);
+    const cart = useSelector(state => state.cartItems.cardProducts)
 
     function a() {
         setActiveSun(!activeSun)
@@ -80,7 +82,7 @@ function Header() {
                                         <i class="far fa-heart"></i> <span class="text">Tanlangan</span>
                                     </a>
                                     <Link rel="nofollow" to="/cart" class="btn / cart-link"> 
-                                    <i class="fas fa-shopping-cart"></i> <span class="text">Savatcha</span> <b class="notify js-basket-num">0</b>
+                                    <i class="fas fa-shopping-cart"></i> <span class="text">Savatcha</span> <b class="notify js-basket-num">{cart.length}</b>
                                     </Link>
                                 </div>
                             </div>

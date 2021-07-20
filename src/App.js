@@ -20,6 +20,7 @@ function App() {
         <Route path='/product/:id'>
           <ProductView />
         </Route>
+        <Route>404 Not Found!</Route>
       </Switch>
       <Footer />
     </>

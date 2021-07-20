@@ -1,5 +1,7 @@
 import React from 'react'
 import { productData } from '../data'
+import deal from '../img/deal.png'
+
 
 function SectionDeal() {
     return (
@@ -13,7 +15,7 @@ function SectionDeal() {
                                     <h3>Muddatli to'lov</h3>
                                     <p class="font-weight-bold">Bank kreditisiz va penyasiz </p>
                                     <a href="https://olcha.uz/oz/installments" className="">
-                                        <img src="https:/olcha.uz/uploads/advertising/images/extra/F2PJp60eBtHyWCint50YkHlWhTjhOAUr9rgphZGJ.png" alt="Muddatli to'lov" style={{maxWidth:'100%'}}/>
+                                        <img src={deal} alt="Muddatli to'lov" style={{maxWidth:'100%'}}/>
                                     </a>
                                     <div class="clearfix mb-3"></div>
                                     <a href="https://olcha.uz/oz/installments" className="btn btn-outline-light">Barchasini ko'rish</a>

@@ -39,7 +39,7 @@ export const productData = [
         title: 'Xiaomi Redmi 9 3/32GB, Ocean Green (Global)',
         type: 'trend',
         rating: 0,
-        monthly: 183000,
+        monthly: 18300,
         discountPrice: 1930000,
         price: 1540000
     },

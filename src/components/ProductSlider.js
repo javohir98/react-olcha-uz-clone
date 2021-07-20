@@ -5,7 +5,7 @@ import OwlCarousel from 'react-owl-carousel';
 import { productData } from '../data';
 
 function Headline(item) {
-    return console.log(item);
+    // return console.log(item);
 }
 
 function ProductSlider({ section_title, type, autoplay, imgUrl }) {
@@ -46,11 +46,6 @@ function ProductSlider({ section_title, type, autoplay, imgUrl }) {
                         }
                     })}
                 </OwlCarousel>
-                {/* {productData.map(item => {
-                    if(item.type == 'trend') {
-                        return <img src={item.img}/>
-                    }
-                })} */}
             </div>
         </section>
     )
