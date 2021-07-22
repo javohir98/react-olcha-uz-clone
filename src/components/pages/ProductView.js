@@ -7,15 +7,14 @@ import { useSelector, useDispatch } from 'react-redux'
 
 const ProductView = () => {
     const { id } = useParams();
-    let card = useSelector(state => state.cartItems.cardProducts)
     const dispatch = useDispatch();
 
-    useEffect(() => {
+    // useEffect(() => {
 
-        dispatch(addToCart(productData[id-1]))
-        console.log(card);
+    //     dispatch(addToCart(productData[id-1]))
+    //     console.log(card);
 
-    }, [id])
+    // }, [id])
 
     return (
         <div>
@@ -112,7 +111,7 @@ const ProductView = () => {
                                                 {/* price-detail-wrap */}
 
                                                 <div className="mb-4">
-                                                    <a href="#" className="js-cart-add btn btn-primary btn-lg">
+                                                    <a href="javascript:void(0)" className="js-cart-add btn btn-primary btn-lg" onClick={() => dispatch(addToCart(productData[id-1]))}>
                                                         <span class="js-cart-hide">Sotib olish</span>
                                                     </a>
                                                     <a 

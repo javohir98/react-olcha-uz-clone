@@ -1,7 +1,11 @@
 import React from 'react'
 import EmptyCart from '../EmtyCart'
+import { useSelector } from 'react-redux'
+import CartContent from '../CartContent'
 
 function Cart() {
+    const cart = useSelector(state => state.cartItems.cardProducts)
+    
     return (
         <section className='section-content padding-y-sm'>
             <div className="container">
@@ -9,7 +13,7 @@ function Cart() {
                 <header className="section-heading">
                     <h2 className="section-title">Savatcha</h2>
                 </header>
-                <EmptyCart />
+                {cart.length ?<CartContent />:<EmptyCart />}
             </div>
         </section>
     )

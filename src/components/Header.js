@@ -7,7 +7,7 @@ function Header() {
     const [isActive, setIsActive] = useState(false);
     const cart = useSelector(state => state.cartItems.cardProducts)
 
-    function a() {
+    function darkMode() {
         setActiveSun(!activeSun)
         document.body.classList.toggle('dark-mode')
     }
@@ -34,7 +34,7 @@ function Header() {
                                 <li><a href="#" class="nav-link js-compare-link text-danger"> Taqqoslash </a>
                                 </li>
                             </ul>
-                            <div class={activeSun?'dark-mode-button dark':'dark-mode-button'} onClick={a}>
+                            <div class={activeSun?'dark-mode-button dark':'dark-mode-button'} onClick={darkMode}>
                                 <div class="shape"></div>
                                 <div class="sun"></div>
                             </div>
