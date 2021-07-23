@@ -1,6 +1,7 @@
 import React from 'react'
 import { productData } from '../data'
 import deal from '../img/deal.png'
+import { Link } from 'react-router-dom'
 
 
 function SectionDeal() {
@@ -33,11 +34,11 @@ function SectionDeal() {
                                     return (
                                         <div className="col-lg-3 col-md-3 col-6" key={item.id}>
                                             <article className='card-product-grid mb-0'>
-                                                <a href="#" className="img-wrap">
+                                                <Link to={`/product/${item.id}`} className="img-wrap">
                                                     <img className=" ls-is-cached lazyloaded" data-src={item.img} alt={item.title} src={item.img}/>
-                                                </a>
+                                                </Link>
                                                 <div className="info-wrap">
-                                                    <a href="#" className="title">Samsung Galaxy Buds Live Bronze </a>
+                                                    <Link to={`/product/${item.id}`} className="title">Samsung Galaxy Buds Live Bronze </Link>
                                                     <div className="price-wrap">
                                                         <small className="monthly">{item.monthly===0?' ': `${item.monthly} so‘m/oy`}</small>
                                                         <br/>

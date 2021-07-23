@@ -25,4 +25,18 @@ export const addToCart = (cardProducts) => {
         type: ActionTypes.ADD_TO_CART,
         payload: cardProducts,
       };
+} 
+
+export const deleteFromCart = (cardProducts) => {
+  return {
+      type: ActionTypes.DELETE_FROM_CART,
+      payload: cardProducts,
+    };
+}
+
+export const historyView = (historyItems) => {
+  return {
+    type: ActionTypes.HISTORY_VIEW,
+    payload: historyItems
+  }
 }

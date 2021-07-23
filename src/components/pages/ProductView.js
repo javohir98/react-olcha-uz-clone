@@ -2,19 +2,18 @@ import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import ProductSlider from '../ProductSlider'
 import { productData } from '../../data'
-import { addToCart } from '../../redux/actions/productAction'
-import { useSelector, useDispatch } from 'react-redux'
+import { addToCart, historyView } from '../../redux/actions/productAction'
+import { useDispatch } from 'react-redux'
 
 const ProductView = () => {
     const { id } = useParams();
     const dispatch = useDispatch();
 
-    // useEffect(() => {
+    useEffect(() => {
 
-    //     dispatch(addToCart(productData[id-1]))
-    //     console.log(card);
+        dispatch(historyView(productData[id-1]))
 
-    // }, [id])
+    }, [id])
 
     return (
         <div>

@@ -1,9 +1,12 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
+import { deleteFromCart } from '../redux/actions/productAction'
+import { useDispatch } from 'react-redux'
 
 const CartList = () => {
     const cart = useSelector(state => state.cartItems.cardProducts)
+    const dispatch = useDispatch()
 
     return (
         <main className='col-md-9 js-cart-rows'>
@@ -37,7 +40,7 @@ const CartList = () => {
                                 <div className="price h5"> {price} сум </div>
                             </div>
                             <div className="col flex-grow-0 text-right">
-                                <a href="#" className="btn btn-light / js-remove" data-rowid="739f207a067feb40601155efc5ef53e8"> <i className="fas fa-times"></i> </a>
+                                <a href="javascript:void(0)" className="btn btn-light / js-remove" data-rowid="739f207a067feb40601155efc5ef53e8" onClick={() => dispatch(deleteFromCart(id))}> <i className="fas fa-times"></i> </a>
                             </div>
                         </div>
                     </article>

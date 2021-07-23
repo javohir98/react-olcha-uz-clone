@@ -7,6 +7,10 @@ const initialCart = {
     cardProducts: []
 }
 
+const initialHistory = {
+    historyItems: []
+}
+
 export const productsReducer = (state = initialState, {type, payload}) => {
     switch (type) {
       case ActionTypes.SET_PRODUCTS:
@@ -32,7 +36,18 @@ export const addToCartReducer = (state = initialCart, {type, payload}) => {
     switch (type) {
         case ActionTypes.ADD_TO_CART:
           return { ...state, cardProducts: [...state.cardProducts, payload] };
+        case ActionTypes.DELETE_FROM_CART:
+            return {...state, cardProducts: [...state.cardProducts.filter(item => item.ids !==payload)]}
         default:
           return state;
       }
+}
+
+export const historyViewReducer = (state=initialHistory, {type, payload}) => {
+    switch(type) {
+        case ActionTypes.HISTORY_VIEW:
+            return { ...state, historyItems: [...state.historyItems, payload]};
+        default:
+            return state;
+    }
 }
