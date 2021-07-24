@@ -4,6 +4,34 @@ import { productData } from '../data'
 import { Link } from 'react-router-dom'
 
 function SectionWhy() {
+
+    const options = {
+        margin: 10,
+        responsiveClass: true,
+        nav: true,
+        loop: true,
+        dots: false,
+        autoplay: true,
+        navText: ['<i class="fas fa-chevron-left"></i>','<i class="fas fa-chevron-right"></i>'],
+        smartSpeed: 1000,
+        items: '3.5',
+        responsive: {
+            0: {
+                items: 2,
+            },
+            400: {
+                items: 2,
+            },
+            600: {
+                items: 2.5,
+            },
+            1100: {
+                items: 3.5,
+    
+            }
+        },
+    };
+
     return (
         <section className='padding-bottom'>
             <div className="container">
@@ -24,7 +52,7 @@ function SectionWhy() {
                     </div>
                     <div className="col-md-8">
                         <h4 class="mb-4">Sizga kerak bo’lishi mumkin</h4>
-                        <OwlCarousel className="slider-popular-items-ow owl-carousel owl-theme owl-loaded owl-drag" loop items='3.5' margin={10} autoplay nav dots={false} navText={['<i class="fas fa-chevron-left"></i>','<i class="fas fa-chevron-right"></i>']}>
+                        <OwlCarousel className="slider-popular-items-ow owl-carousel owl-theme owl-loaded owl-drag" {...options}>
                             {productData.map(item => {
                                 if(item.type == 'why') {
                                     return (

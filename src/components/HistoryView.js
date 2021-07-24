@@ -1,5 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+import { Link } from 'react-router-dom'
 
 function HistoryView() {
     const history = useSelector(state => state.history.historyItems)
@@ -13,9 +14,9 @@ function HistoryView() {
                 <div className="watched-wrap scroll-horizontal">
                     {history.map(item => {
                         return (
-                            <a href="https://olcha.uz/oz/product/view/stiralnaya-mashina-lg-f2j6nn8s" class="item-watched">
+                            <Link to={`/product/${item.id}`} class="item-watched">
                                 <img class=" ls-is-cached lazyloaded" data-src={item.img} alt={item.title} src={item.img}/>
-                            </a>
+                            </Link>
                         )
                     })}
                 </div>

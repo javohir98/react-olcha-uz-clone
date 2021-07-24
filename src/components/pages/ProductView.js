@@ -12,6 +12,11 @@ const ProductView = () => {
     useEffect(() => {
 
         dispatch(historyView(productData[id-1]))
+        
+        window.scrollTo({
+            top: 0, 
+            behavior: 'smooth'
+        });
 
     }, [id])
 

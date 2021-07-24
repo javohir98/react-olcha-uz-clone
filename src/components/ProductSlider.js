@@ -9,6 +9,37 @@ function Headline(item) {
 }
 
 function ProductSlider({ section_title, type, autoplay, imgUrl }) {
+
+    const options = {
+        margin: 10,
+        responsiveClass: true,
+        nav: true,
+        loop: true,
+        dots: false,
+        autoplay: false,
+        navText: ['<i class="fas fa-chevron-left"></i>','<i class="fas fa-chevron-right"></i>'],
+        smartSpeed: 1000,
+        items: '5.5',
+        autoplay: autoplay,
+        responsive: {
+            0: {
+                items: 2,
+            },
+            400: {
+                items: 2,
+            },
+            600: {
+                items: 2,
+            },
+            998: {
+                items: 3.5,
+            },
+            1100: {
+                items: 4.5,
+    
+            }
+        },
+    };
     
     return (
         <section className='padding-bottom'>
@@ -18,7 +49,7 @@ function ProductSlider({ section_title, type, autoplay, imgUrl }) {
                         <h3 className='section-title'>{section_title}</h3>
                     </Link>
                 </header>
-                <OwlCarousel className="slider-popular-items-ow owl-carousel owl-theme owl-loaded owl-drag" loop items='5.5' margin={10} autoplay={autoplay} nav dots={false} navText={['<i class="fas fa-chevron-left"></i>','<i class="fas fa-chevron-right"></i>']}>
+                <OwlCarousel className="slider-popular-items-ow owl-carousel owl-theme owl-loaded owl-drag" {...options}>
                     {productData.map(item => {
                         if(item.type == type) {
                             return (

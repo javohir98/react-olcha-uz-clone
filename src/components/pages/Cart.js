@@ -1,10 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import EmptyCart from '../EmtyCart'
 import { useSelector } from 'react-redux'
 import CartContent from '../CartContent'
 
 function Cart() {
     const cart = useSelector(state => state.cartItems.cardProducts)
+
+    useEffect(() => {
+        
+        window.scrollTo({
+            top: 0, 
+            behavior: 'smooth'
+        });
+
+    }, [])
     
     return (
         <section className='section-content padding-y-sm'>
